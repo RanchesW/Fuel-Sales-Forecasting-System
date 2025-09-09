@@ -1,0 +1,12 @@
+{
+  "last_full_retrain_date": "2025-08-12T17:06:38.483109",
+  "last_data_date": "2025-06-15T23:00:00",
+  "training_data_size": 2934,
+  "fuel_type": "3300000005",
+  "station_id": "Z441_3",
+  "ensemble_weights": {
+    "prophet": 0.6,
+    "arima": 0.4
+  },
+  "model_size_mb": 5.556090354919434
+}
