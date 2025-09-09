@@ -7,17 +7,17 @@ import cx_Oracle
 import sys
 
 # Инициализация Oracle Instant Client
-cx_Oracle.init_oracle_client(lib_dir=r"C:\Users\aalik\Documents\instantclient_23_4")
+cx_Oracle.init_oracle_client(lib_dir=r"")
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Ваши данные для подключения
-username = 'Alikhan'
-password = 'I7juGGsz'
-host = '10.10.120.96'
-port = 1521
-service_name = 'ORCL'
+username = ''
+password = ''
+host = ''
+port = 
+service_name = ''
 
 # Создание строки подключения
 dsn = cx_Oracle.makedsn(host, port, service_name=service_name)
@@ -265,3 +265,4 @@ comparison_df = merged_df[['yhat', 'КОЛИЧЕСТВО', 'accuracy']]
 comparison_df.to_csv('forecast_dates.csv')
 
 print("CSV файл с прогнозом, фактическими данными и точностью создан: forecast_dates.csv")
+
